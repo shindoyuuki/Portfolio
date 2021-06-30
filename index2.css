@@ -1,0 +1,249 @@
+/*ヘッダー固定***********************************/
+@media screen and (max-width: 1080px) {
+#header{
+	height: 15px;/*高さ指定*/
+	width:100%;/*横幅指定*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background:#ffffff;
+	text-align: center;
+	padding: 20px;
+}
+
+/*JSを使いfixedクラスが付与された際の設定*/
+#header.fixed{
+	position: fixed;/*fixedを設定して固定*/
+  z-index: 999;/*最前面へ*/
+  top:0;/*位置指定*/
+  left:0;/*位置指定*/
+}
+}
+/*ハンバーガーメニュー***********************************/
+
+@media screen and (max-width: 1080px) {
+.abc{
+  margin-top: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-logo{
+  margin-top:8px;
+  margin-left:15px;
+  width: auto;
+  height: 50px;
+}
+
+.hamburgerMenu {
+  position: fixed; /*固定している*/
+  width: 300px;
+  height: 100%;
+  right: -300px; /*画面外に配置する*/
+  background-color:#ffa500;
+  transition: all 0.4s; /*400ミリ秒でアニメーション*/
+  transition-timing-function:ease-in-out; /*アニメーションのイージング*/
+}
+ 
+.hamburgerMenu.open {
+  transform: translateX(-300px); 
+}
+ 
+.hamburgerMenu-box ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+ 
+ 
+.hamburgerMenu-box ul li {
+  padding: 10px 0;
+}
+ 
+.hamurerMenu-button {
+  position: absolute;
+  top: 0;
+  right:300px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+ 
+.icon {
+  width: 35px; /*メニューバーの一番上のところ*/
+  height: 4px;
+  background-color: #000000;
+  position: absolute;
+  top: 14.5px;
+  right:  12.5px;
+  transition: all 0.5s;
+  transition-timing-function:ease-out;
+}
+ 
+.icon-m {
+  /*メニューバーの真ん中のところ*/
+  width: 35px;
+  height: 4px;
+  background-color: #000000;
+  position: absolute;
+  top: 29.5px;
+  right: 12.5px;
+  transition: all 0.5s;
+  transition-timing-function:ease-out;
+}
+ 
+.icon-b {
+　content: '';/*メニューバーの一番下のところ*/
+  width: 35px;
+  height: 4px;
+  background-color: #000000;
+  position: absolute;
+  top: 44.5px;
+  right:  12.5px;
+  transition: all 0.5s;
+  transition-timing-function:ease-out;
+}
+ 
+.icon.open {
+  transform: translateY(14.5px) rotate(135deg); /*45°+ 90°でアニメーションさせる*/
+}
+ 
+.icon-b.open {
+  transform: translateY(-14.5px) rotate(-135deg);　/*45°+ 90°でアニメーションさせる*/
+}
+ 
+.icon-m.open {
+  opacity: 0; /*真ん中のバーは消す*/
+}
+
+.header-nav-list {
+   display: none;
+}
+
+.header-nav-lists{
+ display:block;
+}
+ 
+.iro{
+  font-size: 15px;
+  color:#ffffff;
+  padding: 0px  0px 20px 0px;
+  border-bottom: dashed 1px #ffffff;
+ }
+}
+
+ 
+ /*メイン*******************************************************/
+@media screen and (max-width: 1080px) {
+  .top_img {
+  margin-top:13px;
+  height: 550px;
+  background-image: url(img/tianjin-2185510_1920.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.top_main_text {
+  font-size: 45px;
+}
+.top_sub_text{
+  font-size: 20px;
+}
+}
+
+ /*プロフィール*******************************************************/
+ @media screen and (max-width: 900px){
+.osae_text {
+    width: 85%;
+    margin: 40px auto 0;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 30px;
+    text-align: justify;
+    text-justify: inter-ideograph;
+}
+table.company_info_base1 {
+    width: 100%;
+    table-layout: fixed;
+    margin: 30px auto 0;
+    border-collapse: separate;
+    border-spacing: 0px 7px;
+    font-size: 16px;
+}
+table.company_info_base1 th {
+    background: #979797;
+    vertical-align: middle;
+    text-align: center;
+    width: 120px;
+    overflow: visible;
+    position: relative;
+    color: #fff;
+    font-weight: normal;
+    font-size: 16px;
+}
+table.company_info_base1 td {
+    background: #F6F6F6;
+    padding-left: 20px;
+    width: 100%;
+}
+}
+
+
+/*スキル*******************************************************/
+@media screen and (max-width: 900px){
+.service{
+  width: 85%;
+  font-size: 16px;
+}
+.service_bottom_text p {
+    width: 85%;
+    margin: 0 auto;
+    color: #818080;
+}
+}
+/*趣味*******************************************************/
+@media screen and (max-width: 900px){
+.strength{
+  width: 90%;
+  
+}
+.strength_cont {
+  display: flex;
+  flex-direction: column;
+}
+.strength_box {
+  width: auto;
+}
+.imga{
+  width: 100%;
+}
+}
+
+/*フッダー*******************************************************/
+@media screen and (max-width: 900px){
+.address_name {
+    font-size: 25px;
+    letter-spacing: 2px;
+    padding: 0px  0px 20px 0px;
+    border-bottom: dashed 2px #ffffff;
+}
+.address_info {
+    margin: 10px 0;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+}
+.address_tel {
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.footer_cont {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+}
+.footer_menu{
+  display: none !important;
+}
+}

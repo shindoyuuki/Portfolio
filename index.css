@@ -1,0 +1,291 @@
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+.content{
+  max-width: 1140px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.warp {
+  overflow: hidden;
+}
+
+.header-logo{
+  margin-top:8px;
+  width: auto;
+  height: 50px;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+}
+
+
+/*ヘッダー*******************************************************/
+.header-nav-lists{
+  display: none;
+}
+
+.abc {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.header-nav-list{
+  display: flex;
+  text-align: center;
+  list-style-type:none;
+ }
+ 
+ .header-nav-item-outline{
+  text-align: center;
+  font-size: 17px;
+  font-family: Lato, sans-serif;
+  list-style: none;
+  padding: 0px 20px 20px 20px;
+ }
+ .header-nav-item > span {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+}
+.iroh {
+    font-size: 8px;
+    color:#000000;
+}
+
+.iroi{
+  color:#000000;
+}
+
+.backcolor{
+  background-color:#fffaf0;
+  margin-top: -25px;
+}
+ /*メイン*******************************************************/
+ .top_img {
+  margin-top: -20px;
+  height: 550px;
+  background-image: url(img/tianjin-2185510_1920.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border-bottom: 40px solid #ffa500;
+}
+.top_main_text{
+ text-align: center;
+ margin: 0;
+ padding-top:150px;
+ font-size: 60px;
+ font-weight: bold;
+ color: #fff;
+}
+
+.top_sub_text{
+  text-align: center;
+  font-size: 26px;
+  color: #fff;
+}
+
+ /*プロフィール*******************************************************/
+.osae {
+  position: relative;
+  width: 100%;;
+  padding: 50px 0;
+}
+.cont_title h2 {
+  font-size: 22px;
+  color: #ffa500;
+  text-align: center;
+  font-weight: normal;
+}
+.cont_title hr {
+  width: 95px;
+  margin: 5px auto 0;
+  border: 0;
+  border-bottom: 3px solid #ffa500;
+}
+table.company_info_base1 {
+  width: 700px;
+  margin: 30px auto 0;
+  border-collapse: separate;
+  border-spacing: 0px 7px;
+  font-size: 16px;
+}
+table.company_info_base1 th {
+  background: #979797;
+  vertical-align: middle;
+  text-align: center;
+  width: 220px;
+  overflow: visible;
+  position: relative;
+  color: #fff;
+  font-weight: normal;
+  font-size: 16px;
+}
+table.company_info_base1 td {
+  background: #F6F6F6;
+  width: 480px;
+  padding-left: 20px;
+}
+table.company_info_base1 th, table.company_info_base1 td {
+  padding: 10px;
+}
+
+/* スキル ------------------------------ */
+.service {
+  width: 800px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.service_cont {
+  margin-top: 50px;
+}
+.service_box {
+  display: -webkit-box;
+  display: flex;
+  margin-bottom: 50px;
+}
+.service_text_area {
+  width: 690px;
+  margin-left: 5px;
+  padding: 0 0 10px 10px;
+  border-left: 6px solid #ffa500;
+}
+.service_no {
+  position: relative;
+  top: -14px;
+  font-size: 40px;
+  color: #ffa500;
+}
+.service_headline {
+  position: relative;
+  top: -5px;
+  font-size: 22px;
+  color: #ffa500;
+}
+.service_text {
+  font-size: 16px;
+  color: #272727;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
+/* 趣味 ------------------------------ */
+.strength {
+  width: 960px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+.strength_cont {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding: 20px;
+  background: #EFEFEF;
+}
+.strength_box {
+  width: 285px;
+}
+
+.imga{
+  width: 285px;
+  height:200px;
+}
+.strength_head {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: end;
+  align-items: flex-end;
+  margin-top: -20px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #ffa500;
+}
+.strength_no {
+  position: relative;
+  bottom: -15px;
+  font-size: 36px;
+  color: #ffa500;
+}
+.strength_headline {
+  position: relative;
+  bottom: -5px;
+  padding-left: 10px;
+  font-size: 21px;
+  line-height: 25px;
+  color: #ffa500;
+}
+.strength_text {
+  margin-top: 20px;
+  line-height: 27px;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
+/* footer ------------------------------ */
+footer {
+  background:#ffa500;
+  position: relative;
+  padding: 40px 0 50px;
+  border-top: 2px solid #ffa500;
+}
+.footer_cont {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  width: 960px;
+  margin: 0 auto;
+}
+.footer_menu ul {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  width: 300px;
+  list-style: none;
+  margin-left: 70px;
+}
+.footer_menu ul li a {
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.address_name {
+  font-size: 21px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+.address_info {
+  margin: 10px 0;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+}
+.address_tel {
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+.address_tel span {
+  padding-right: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
